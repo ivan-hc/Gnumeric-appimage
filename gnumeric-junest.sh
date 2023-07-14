@@ -65,8 +65,7 @@ export UNION_PRELOAD=$HERE
 export JUNEST_HOME=$HERE/.junest
 export PATH=$HERE/.local/share/junest/bin/:$PATH
 mkdir -p $HOME/.cache
-echo "$APP $@" | $HERE/.local/share/junest/bin/junest proot -n -b "--bind=/home --bind=/home/$(echo $USER) --bind=/media --bind=/opt"
-EOF
+$HERE/.local/share/junest/bin/junest proot -n -b "--bind=/home --bind=/home/$(echo $USER) --bind=/media --bind=/opt --bind=/usr/lib/locale --bind=/usr/share --bind=/etc" -- $APP "$@"EOF
 chmod a+x ./$APP.AppDir/AppRun
 
 # REMOVE "READ-ONLY FILE SYSTEM" ERRORS
