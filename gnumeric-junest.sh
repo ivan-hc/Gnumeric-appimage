@@ -1620,7 +1620,7 @@ rm -R -f ./$APP.AppDir/.junest/usr/share/common-lisp
 rm -R -f ./$APP.AppDir/.junest/usr/share/dbus-1
 rm -R -f ./$APP.AppDir/.junest/usr/share/defaults
 rm -R -f ./$APP.AppDir/.junest/usr/share/devtools
-rm -R -f ./$APP.AppDir/.junest/usr/share/doc
+#rm -R -f ./$APP.AppDir/.junest/usr/share/doc
 rm -R -f ./$APP.AppDir/.junest/usr/share/drirc.d
 rm -R -f ./$APP.AppDir/.junest/usr/share/emacs
 rm -R -f ./$APP.AppDir/.junest/usr/share/et
@@ -1664,7 +1664,7 @@ rm -R -f ./$APP.AppDir/.junest/usr/share/libdrm
 rm -R -f ./$APP.AppDir/.junest/usr/share/libgpg-error
 rm -R -f ./$APP.AppDir/.junest/usr/share/libthai
 rm -R -f ./$APP.AppDir/.junest/usr/share/licenses
-rm -R -f ./$APP.AppDir/.junest/usr/share/locale
+#rm -R -f ./$APP.AppDir/.junest/usr/share/locale
 rm -R -f ./$APP.AppDir/.junest/usr/share/makepkg
 rm -R -f ./$APP.AppDir/.junest/usr/share/makepkg-template
 rm -R -f ./$APP.AppDir/.junest/usr/share/man
@@ -1713,4 +1713,4 @@ mkdir -p ./$APP.AppDir/.junest/media
 
 # CREATE THE APPIMAGE
 ARCH=x86_64 ./appimagetool -n ./$APP.AppDir
-mv ./*AppImage ./Gnumeric_$VERSION-x86_64.AppImage
+mv ./*AppImage ./Gnumeric-Spreadsheet_$VERSION-x86_64.AppImage
