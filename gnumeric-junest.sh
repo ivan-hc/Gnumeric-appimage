@@ -493,7 +493,7 @@ function _rsync_main_package() {
 
 function _rsync_dependences() {
 	rm -R -f ./deps/.*
-	#rsync -av ./deps/* ./"$APP".AppDir/.junest/ | echo "◆ Rsync all dependeces, please wait..."
+	rsync -av ./deps/* ./"$APP".AppDir/.junest/ | echo "◆ Rsync all dependeces, please wait..."
 	echo "-----------------------------------------------------------"
 	echo ""
 }
@@ -529,4 +529,4 @@ if test -f ./*.AppImage; then
 	rm -R -f ./*archimage*.AppImage
 fi
 ARCH=x86_64 ./appimagetool --comp zstd --mksquashfs-opt -Xcompression-level --mksquashfs-opt 20 ./$APP.AppDir
-mv ./*AppImage ./"$(cat ./"$APP".AppDir/*.desktop | grep 'Name=' | head -1 | cut -c 6- | sed 's/ /-/g')"_"$VERSION"-archimage3.4.4-2-x86_64.AppImage
+mv ./*AppImage ./"$(cat ./"$APP".AppDir/*.desktop | grep 'Name=' | head -1 | cut -c 6- | sed 's/ /-/g')"_"$VERSION"-archimage3.4.4-2.1-x86_64.AppImage
