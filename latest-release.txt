@@ -1,2 +1,2 @@
 https://github.com/ivan-hc/Gnumeric-appimage/releases/download/continuous/Gnumeric_1.12.59-2-archimage4.3-x86_64.AppImage
-Sat Jul 12 02:03:06 UTC 2025
+Sun Jul 13 02:11:29 UTC 2025
